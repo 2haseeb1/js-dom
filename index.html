@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    html {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .font-inter{
+        
+        font-size: 16px;
+        font-weight: 300;
+        color:#fff;
+    }
+    .font-inter1{
+        
+        font-size: 18px;
+        font-weight: 500;
+        font-family: inter;
+        
+    }
+    .menu{
+      color:#030712b3;
+      font-family: raleway;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  </style>
+  <body class="">
+    <header class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-rale "
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class=" text-4xl font-semibold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-rale">
+            <li><a>Home</a></li>
+
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn rounded-md text-xl text-[#1DD100] bg-[#1dd1001a]" >Buss<span><img src="./images/bus-icon.png" alt="" class="w-[24px] h-[24px]"></span></a>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <!-- banner section -->
+      <section>
+        <div class="hero h-[550px]" style="background-image: url('./images/banner.png');border-radius: 32px;overflow: hidden;">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="min-w-lg">
+              <h1 class="mb-5 text-5xl font-bold font-rale text-white leading-[65px] ">End-to-End Travel with <br><span class="text-[#1dd100]">P Paribahan</span></h1>
+              <p class="mb-5 w-[75%] mx-auto text-lg">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+              <button class="btn btn-primary rounded-md bg-[#1dd100] w-[170px] text-xl">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- offer section -->
+      <section>
+      <div class=" min-h-[270px] rounded-sm pt-[130px]">
+         <div class="text-center text-[40px] font-rale font-bold">
+            <p>Best Offers For You</p>
+         </div>
+      </div>
+      <div class="flex gap-5 justify-center">
+        <div class="flex ">
+          <div class="w-[342px] h-[220px] bg-[#FFBF0F] rounded-3xl rounded-r-none">
+           <div class="pt-[50px]">
+           <p class="text-center text-[40px] font-rale font-bold ">15% OFF</p> 
+
+<p class="font-inter text-xl font-semibold text-center text-black ">on your next purchase</p>
+
+<p class="text-center font-inter1">use by January 2024</p>
+           </div>
+          </div>
+          <div>
+            <img src="./images/cupon-devider.svg" alt="" class="bg-[#FFBF0F]">
+          </div>
+          <div class="w-[201px] h-[220px] bg-[#FFBF0F] rounded-r-3xl">
+            <div>
+               <p class="text-center text-[32px] font-semibold font-rale pt-[50px]">NEW15 </p>
+            </div>
+               <div class="pt-[-30px] text-center">
+                
+                Coupon Code
+               </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="w-[342px] h-[220px] bg-[#F78C9C] rounded-3xl rounded-r-none">
+           <div class="pt-[50px]">
+           <p class="text-center text-[40px] font-rale font-bold ">20% OFF</p> 
+
+<p class="font-inter text-xl font-semibold text-center text-black ">on your next purchase</p>
+
+<p class="text-center font-inter1">use by January 2024</p>
+           </div>
+          </div>
+          <div>
+            <img src="./images/cupon-devider.svg" alt="" class="bg-[#F78C9C] ">
+          </div>
+          <div class="w-[201px] h-[220px] bg-[#F78C9C]  rounded-r-3xl">
+            <div>
+               <p class="text-center text-[32px] font-semibold font-rale pt-[50px]">NEW15 </p>
+            </div>
+               <div class="pt-[-30px] text-center">
+                
+                Coupon Code
+               </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center ">
+        <button class="text-[#1DD100] rounded-md border-2 border-[#1DD100] p-4 mt-14 w-[15%] mb-14 text-xl font-semibold">See All Offers</button>
+      </div>
+      </section>
+      <section>
+        <div class="bg-red-100 min-h-[600px] border-t-2 rounded-[88px] border-[#1DD100] rounded-b-none">
+          <h3 class="text-center text-[40px] font-bold font-rale pt-[50px] pb-[25px]">P.H Paribahan</h3>
+          <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined .</p>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
