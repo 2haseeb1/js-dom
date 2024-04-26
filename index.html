@@ -29,14 +29,22 @@
       padding: 0;
       margin: 0;
       box-sizing: border-box;
-  
     }
-  
-    .font-inter {
-      font-size: 16px;
-      font-weight: 300;
-      color: #fff;
-      
+    html {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .font-inter{
+        
+        font-size: 16px;
+        font-weight: 300;
+        color:#fff;
     }
     .font-inter1 {
       font-size: 18px;
@@ -54,54 +62,6 @@
       font-size: 18px;
       font-weight: 500;
     }
-    .font-rale {
-      font-family: raleway;
-      color: #03071299;
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    .font-rale2 {
-      color:#030712;
-      text-align: center;
-      font-family: Raleway;
-      font-size: 24px;
-      font-weight: 600;
-      
-    }
-    .li-style{
-     
-      min-width:450px;
-      font-size: 16px;
-      color:#03071299;
-      font-weight: 400;
-    }
-    .btn-primary{
-      background: #1dd100;
-      color:#fff;
-      font-size: 16px;
-    
-    }
-  .enable{
-    background: #1dd100 !important;
-    color:white !important;
-  }
-  .apply-container{
-    display: none;
-  }
-  .btn-secondary{
-    background: #8080800c;
-    border-radius: 12px;
-    border:none;
-    outline: none;
-  
-  }
-  .btn-secondary:hover{
-    background: #1dd100;
-
-    
-  }
-  
   </style>
   <body>
     <div class="flex justify-center">
@@ -135,7 +95,7 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <p class="text-4xl font-semibold">P-Ticket</p>
+          <a class=" text-4xl font-semibold">P-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 font-rale">
@@ -163,18 +123,7 @@
     <main class="container mx-auto">
       <!-- banner section -->
       <section>
-        <!-- postion -->
-        <div class="relative w-[80%] mx-auto">
-
-      
-        <div
-          class="hero h-[550px] w-full mx-auto"
-          style="
-            background-image: url('./images/banner.png');
-            border-radius: 32px;
-            overflow: hidden;
-          "
-        >
+        <div class="hero h-[550px]" style="background-image: url('./images/banner.png');border-radius: 32px;overflow: hidden;">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="min-w-lg">
@@ -228,24 +177,15 @@
         <div class="min-h-[270px] rounded-sm pt-[130px]">
           <div class="text-center text-[40px] font-rale font-bold">
             <p>Best Offers For You</p>
-          </div>
-        </div>
+         </div>
       </div>
-        <div class="flex gap-5 justify-center">
-          <div class="flex">
-            <div
-              class="w-[342px] h-[220px] bg-[#FFBF0F] rounded-3xl rounded-r-none"
-            >
-              <div class="pt-[50px]">
-                <p class="text-center text-[40px] font-rale font-bold">
-                  15% OFF
-                </p>
+      <div class="flex gap-5 justify-center">
+        <div class="flex ">
+          <div class="w-[342px] h-[220px] bg-[#FFBF0F] rounded-3xl rounded-r-none">
+           <div class="pt-[50px]">
+           <p class="text-center text-[40px] font-rale font-bold ">15% OFF</p> 
 
-                <p
-                  class="font-inter text-xl font-semibold text-center text-black"
-                >
-                  on your next purchase
-                </p>
+<p class="font-inter text-xl font-semibold text-center text-black ">on your next purchase</p>
 
                 <p class="text-center font-inter1">use by January 2024</p>
               </div>
