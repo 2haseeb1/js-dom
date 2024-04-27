@@ -6,5 +6,7 @@ git branch -M main
 git remote add origin https://github.com/2haseeb1/js-dom-another.git
 git push -u origin main
 
+https://github.com/2haseeb1/js-dom
 
-https://662b9c21ecde35c5242aed88--mellifluous-mermaid-c6e37c.netlify.app/
+
+https://662c030a0acda61849436552--illustrious-pasca-1a4f2a.netlify.app/

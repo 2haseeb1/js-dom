@@ -1,0 +1,7 @@
+responsiveness
+
+
+vertical dashed line 
+
+
+make all field put data then make it redirect

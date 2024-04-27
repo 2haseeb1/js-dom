@@ -167,7 +167,7 @@
 
           <p class="text-4xl font-semibold">P-Ticket</p>
 
-          <a class="text-4xl font-semibold">P-Ticket</a>
+         
 
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -492,10 +492,10 @@
       <div
         class="w-[1265px] min-h-[450px]  mx-auto mt-[20px] rounded-[24px] pb-[45px]"
       >
-        <div class="flex pt-[25px] ">
-          <div class="w-[870px] min-h-[400px] ">
+        <div class="flex flex-col lg:flex-row pt-[25px] ">
+          <div class="w-[440px] lg:w-[870px] min-h-[400px] ">
             <div class=" border border-dashed border-b-[#03071233]">
-            <p class="font-rale2 pb-2">Select Your Seat</p>
+            <p class="font-rale2 pb-2 text-center">Select Your Seat</p>
           </div>
             <div class="flex justify-between border border-dashed border-b-[#03071233] py-3">
               <div class="flex gap-2  ">
@@ -679,7 +679,7 @@
               </div>
               
            
-              <button type="submit" class="w-full btn btn-primary rounded-md bg-[#1dd100] enabled disabled" id = "nextButton" onclick="handleNextButtonClick()" disabled>Next</button>
+              <button type="submit" class="w-full btn btn-primary rounded-md bg-[#1dd100] enabled disabled" id = "nextButton" disabled>Next</button>
 
             </form>
           </div>
@@ -696,30 +696,32 @@
         </div>
       </div>
     </section>
-      <footer class="bg-[#030712] text-white py-8 px-[130px]">
-        <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
-          <div class="mb-4 lg:mb-0">
-            <h3 class="text-xl font-bold">P-Ticket</h3>
-            <p class="mt-2 text-[#ffffffcc]" font-[400]>P-Ticket is a digital platform to</p>
-            <p class="text-[#ffffffcc] font-[400] ">make your daily commuting better.</p>
-            
-          </div>
+    <footer class="bg-[#030712] text-white py-8 px-4 lg:px-8">
+      <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div class="mb-4 lg:mb-0">
+          <h3 class="text-xl font-bold">P-Ticket</h3>
+          <p class="mt-2 text-[#ffffffcc]">P-Ticket is a digital platform to</p>
+          <p class="text-[#ffffffcc]">make your daily commuting better.</p>
+        </div>
           
-          <div>
-            <h3 class="text-xl  font-rale text-white font-[500]">Download our app</h3>
-            <div class="mt-2 ">
-             <img src="./images/goole-play.svg" alt="">
-            </div>
+        <div>
+          <h3 class="text-xl font-rale text-white font-[500]">Download our app</h3>
+          <div class="mt-2 flex  justify-center lg:block  ">
+            <img src="./images/goole-play.svg" alt="Google Play Store" class="w-24 lg:w-auto">
           </div>
         </div>
-        <div class="border border-dashed border-y-[#ffffff4d] mt-[30px]">
-
-        </div>
-        <div class="text-center mt-8 flex justify-between text-[16px]">
-          <p class="text-[#ffffffcc] font-light">&copy;all rights reserved, P-Ticket services limited.2024</p>
-          <p class="text-white"><span class="mr-2">Terms & condition</span> <span class="mr-2">Return & refund policy</span> <span>Privacy policy</span></p>
-        </div>
-      </footer>
+      </div>
+      <div class="border border-dashed border-y-[#ffffff4d] mt-6 lg:mt-8"></div>
+      <div class="text-center mt-6 lg:mt-8 flex flex-col lg:flex-row justify-center lg:justify-between text-[16px]">
+        <p class="mb-4 lg:mb-0">&copy; all rights reserved, P-Ticket services limited. <span class="block lg:inline">2024</span></p>
+        <p class="text-white lg:text-[16px]">
+          <span class="mr-4">Terms & condition</span>
+          <span class="mr-4">Return & refund policy</span>
+          <span>Privacy policy</span>
+        </p>
+      </div>
+    </footer>
+    
     <script>
 let totalValue = 0;
 let seatNo = 0;
@@ -756,11 +758,10 @@ function checkFormValidity() {
     if (selectedSeats > 0 && phoneNumber !== '') {
         nextButton.disabled = false;
         nextButton.classList.remove('disabled');
-        if (phoneNumber !== "") {
-            setTimeout(() => {
-                redirect();
-            }, 15000);
-        }
+        
+               
+           
+        
     } else {
         nextButton.disabled = true;
         nextButton.classList.add('disabled');
@@ -863,9 +864,14 @@ function showHelloWorldInModel() {
     const modalContent = modal.querySelector('.modal-box');
     modalContent.innerHTML = '<h3 class="font-bold text-lg">Hello World!</h3><p class="py-4">Press ESC key or click on ✕ button to close</p>';
 }
-
+nextButton.addEventListener("click",()=>{
+  handleNextButtonClick()
+})
 function handleNextButtonClick() {
-    
+  
+  setTimeout(() => {
+        handleNextButtonClick();
+    }, 22000);
     showHelloWorldInModel();
     
 }
@@ -873,7 +879,7 @@ function handleNextButtonClick() {
 const scrollBtn = document.getElementById('scrollBtn');
 
 scrollBtn.addEventListener('click', function () {
-    window.scrollBy({ top: 800, behavior: 'smooth' });
+    window.scrollBy({ top: 1250, behavior: 'smooth' });
 });
 
 function hiddenApplyContainer() {
