@@ -237,21 +237,21 @@
           <div>
           <div class="flex flex-col lg:flex-row justify-between absolute top-[500px]  left-[50px] lg:left-[134px]  w-[40%] lg:w-[80%] gap-4 mr-6  ">
             
-            <div class=" bg-white lg:w-[308px]   lg:h-[138px] rounded-[24px]  lg:flex justify-center items-center gap-1">
+            <div class=" bg-white lg:w-[308px]   lg:h-[138px] rounded-[24px]  lg:flex justify-center items-center gap-1 border border-b-[3px] border-b-[#1dd100] ">
              <img src="./images/people.png" alt=""  class="w-[32px] lg:w-[64px] h-[32px] lg:h-[64px] rounded-[24px]">
              <div>
                 <p class="font-bold text-base lg:text-[36px] font-inter text-black">500K+</p>
                 <p class="text-[#03071299] mt-1 lg:mt-4 text-[14px] lg:text-[16px]">Registered users</p>
              </div>
             </div>
-            <div class="bg-white lg:w-[308px]   lg:h-[138px] rounded-[24px]  lg:flex justify-center items-center gap-1 ">
+            <div class="bg-white lg:w-[308px]   lg:h-[138px] rounded-[24px]  lg:flex justify-center items-center gap-1 border-b-[3px] border-b-[#1dd100]">
              <img src="./images/tickets-sold.svg" alt=""  class="w-[32px] lg:w-[64px] h-[32px] lg:h-[64px]">
              <div>
                 <p class="font-bold text-base lg:text-[36px] font-inter text-black">1.7 lacks</p>
                 <p class="text-[#03071299] mt-1 lg:mt-4 text-[14px] lg:text-[16px]">Tickets sold</p>
              </div>
             </div>
-            <div class="bg-white lg:w-[308px]   lg:h-[138px] rounded-[24px]  lg:flex justify-center items-center gap-1 ">
+            <div class="bg-white lg:w-[308px]   lg:h-[138px] rounded-[24px]  lg:flex justify-center items-center gap-1 border-b-[3px] border-b-[#1dd100]">
              <img src="./images/stoppage.png" alt="" class="w-[32px] lg:w-[64px] h-[32px] lg:h-[64px]">
              <div>
                 <p class="font-bold text-base lg:text-[36px] font-inter text-black">80K+</p>
@@ -684,7 +684,7 @@
               </div>
               
            
-              <button type="submit" class="w-full btn btn-primary rounded-md bg-[#1dd100] enabled  text-transparent mr-3" id = "nextButton" onclick="redirect()" >.<span><a href="./index-model.html" class="text-black">Next</a></span></button>
+              <button type="submit" class="w-full btn btn-primary rounded-md bg-[#1dd100] enabled  text-transparent mr-3" id = "nextButton"  disabled>.<span><a  class="text-black"  id="nextbtn-anchor">Next</a></span></button>
 
             </form>
           </div>
@@ -735,8 +735,10 @@ let clickedButtons = [];
 const phoneNumberInput = document.getElementById('phone-number');
 
 const nextButton = document.getElementById('nextButton');
-
-nextButton.disabled=true;
+const nextButtonAnchor=document.getElementById("nextbtn-anchor")
+nextButtonAnchor.addEventListener("click",()=>{
+  redirect()
+})
 const discountContainer = document.getElementById("discount-container");
 
 function showDiscountPrice(discount) {
@@ -764,10 +766,9 @@ function checkFormValidity() {
 
     if (selectedSeats > 0 && phoneNumber !== '') {
         nextButton.disabled = false;
-        nextButton.classList.remove('disabled');
-    } else {
-        nextButton.disabled = true;
-        nextButton.classList.add('disabled');
+      
+        nextButton.removeAttribute("disabled")
+        
     }
 }
 
@@ -880,34 +881,7 @@ function hiddenApplyContainer() {
 }
 
 
-function checkAllInputsFilled() {
-    const formInputs = document.querySelectorAll('.card-body input[required]');
-    let allInputsFilled = true;
-    formInputs.forEach(input => {
-        if (input.value.trim() === '') {
-            allInputsFilled = false;
-        }
-    });
-    return allInputsFilled;
-}
 
-
-function updateNextButtonOnClick() {
-    const nextButton = document.getElementById('nextButton');
-    if (checkAllInputsFilled()) {
-        nextButton.removeAttribute('disabled');
-        nextButton.setAttribute('onclick', 'redirect()');
-    } else {
-        nextButton.setAttribute('disabled', true);
-        nextButton.removeAttribute('onclick');
-    }
-}
-
-
-const formInputs = document.querySelectorAll('.card-body input[required]');
-formInputs.forEach(input => {
-    input.addEventListener('input', updateNextButtonOnClick);
-});
 
 
 </script>
