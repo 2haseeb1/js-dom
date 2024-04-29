@@ -134,7 +134,7 @@
   </style>
   <body>
     <div class="flex justify-center">
-     <header class="  bg-green-300 w-[80%] mx-auto">
+     <header class="  bg-green-300 w-[80%] lg:w-[80%] mx-auto">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -165,7 +165,7 @@
             </ul>
           </div>
 
-          <p class="text-4xl font-semibold">P-Ticket</p>
+          <p class=" text-xl  lg:text-4xl font-semibold">P-Ticket</p>
 
          
 
@@ -197,7 +197,7 @@
       <!-- banner section -->
       <section>
         <!-- postion -->
-        <div class="relative w-[80%] mx-auto">
+        <div class="relative   lg:w-[80%] mx-auto">
 
       
         <div
@@ -214,15 +214,15 @@
         >
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
-            <div class="min-w-lg">
+            <div class=" w-[50%]  lg:min-w-lg">
               <h1
-                class="mb-5 text-5xl font-bold font-rale text-white leading-[65px]"
+                class="mb-5  text-2xl lg:text-5xl font-bold font-rale text-white leading-5  lg:leading-[50px]"
               >
-                End-to-End Travel with <br /><span class="text-[#1dd100]"
+                End-to-End Travel with <br/><span class="text-[#1dd100]"
                   >P Paribahan</span
                 >
               </h1>
-              <p class="mb-5 w-[75%] mx-auto text-lg">
+              <p class="mb-5 w-[75%] mx-auto text-sm  lg:text-lg">
                 Yes, you can run unit tests and view the results directly within
                 the app. The integrated testing features allow for a streamlined
                 .
@@ -234,26 +234,28 @@
               </button>
             </div>
           </div>
-          <div class="flex justify-between absolute top-[500px] left-[134px] ">
-            <div class="bg-white flex gap-5 border border-b-[3px] border-b-[#1dd100] rounded-[24px] w-[308px] h-[108px] mr-4 items-center justify-center">
-             <img src="./images/people.png" alt="" width="64px"  class="h-[64px]">
+          <div>
+          <div class="flex flex-col lg:flex-row justify-between absolute top-[500px]  left-[50px] lg:left-[134px]  w-[40%] lg:w-[80%] gap-4 mr-6  ">
+            
+            <div class=" bg-white lg:w-[308px]   lg:h-[138px] rounded-[24px]  lg:flex justify-center items-center gap-1">
+             <img src="./images/people.png" alt=""  class="w-[32px] lg:w-[64px] h-[32px] lg:h-[64px] rounded-[24px]">
              <div>
-                <p class="font-bold text-[36px] font-inter text-black">500K+</p>
-                <p class="text-[#03071299]">Registered users</p>
+                <p class="font-bold text-base lg:text-[36px] font-inter text-black">500K+</p>
+                <p class="text-[#03071299] mt-1 lg:mt-4 text-[14px] lg:text-[16px]">Registered users</p>
              </div>
             </div>
-            <div class="bg-white flex gap-5 border border-b-[3px] border-b-[#1dd100] rounded-[24px] w-[308px] h-[108px] mr-4 items-center justify-center">
-             <img src="./images/tickets-sold.svg" alt="" class="w-[64px] h-[64px]">
+            <div class="bg-white lg:w-[308px]   lg:h-[138px] rounded-[24px]  lg:flex justify-center items-center gap-1 ">
+             <img src="./images/tickets-sold.svg" alt=""  class="w-[32px] lg:w-[64px] h-[32px] lg:h-[64px]">
              <div>
-                <p class="font-bold text-[36px] font-inter text-black">1.7 lacks</p>
-                <p class="text-[#03071299]">Tickets sold</p>
+                <p class="font-bold text-base lg:text-[36px] font-inter text-black">1.7 lacks</p>
+                <p class="text-[#03071299] mt-1 lg:mt-4 text-[14px] lg:text-[16px]">Tickets sold</p>
              </div>
             </div>
-            <div class="bg-white flex gap-5 border border-b-[3px] border-b-[#1dd100] rounded-[24px] w-[308px] h-[108px] mr-4 items-center justify-center">
-             <img src="./images/stoppage.png" alt="" class="w-[64px] h-[64px]">
+            <div class="bg-white lg:w-[308px]   lg:h-[138px] rounded-[24px]  lg:flex justify-center items-center gap-1 ">
+             <img src="./images/stoppage.png" alt="" class="w-[32px] lg:w-[64px] h-[32px] lg:h-[64px]">
              <div>
-                <p class="font-bold text-[36px] font-inter text-black">80K+</p>
-                <p class="text-[#03071299]">Rental partners</p>
+                <p class="font-bold text-base lg:text-[36px] font-inter text-black">80K+</p>
+                <p class="text-[#03071299] mt-1 lg:mt-4 text-[14px] lg:text-[16px]">Rental partners</p>
              </div>
             </div>
        
@@ -262,8 +264,8 @@
       </section>
       <!-- offer section -->
       <section>
-        <div class="min-h-[270px] rounded-sm pt-[130px]">
-          <div class="text-center text-[40px] font-rale font-bold">
+        <div class="min-h-[270px] rounded-sm pt-[130px] mt-[185px] lg:mt-0">
+          <div class="text-center text-[18px] lg:text-[40px] font-rale font-bold">
             <p>Best Offers For You</p>
 
           </div>
@@ -276,10 +278,12 @@
 
           </div>
         </div>
-        <div class="flex gap-5 justify-center">
-          <div class="flex">
+        <div class="  flex  flex-col lg:flex-row gap-5 justify-center">
+         
+         
+          <div class="flex mx-[20px] lg:mx-0">
             <div
-              class="w-[342px] h-[220px] bg-[#FFBF0F] rounded-3xl rounded-r-none"
+              class="w-[47%] lg:w-[342px] h-[220px] bg-[#FFBF0F] rounded-3xl rounded-r-none "
             >
               <div class="pt-[50px]">
                 <p class="text-center text-[40px] font-rale font-bold">
@@ -302,20 +306,21 @@
                 class="bg-[#FFBF0F]"
               />
             </div>
-            <div class="w-[201px] h-[220px] bg-[#FFBF0F] rounded-r-3xl">
+            <div class=" w-[140px]  lg:w-[201px] h-[220px] bg-[#FFBF0F] rounded-r-3xl">
               <div>
                 <p
                   class="text-center text-[32px] font-semibold font-rale pt-[50px]"
                 >
-                  NEW15
+                NEW15
+              
                 </p>
               </div>
               <div class="pt-[-30px] text-center">Coupon Code</div>
             </div>
           </div>
-          <div class="flex">
+          <div class="flex mx-[20px] lg:mx-0">
             <div
-              class="w-[342px] h-[220px] bg-[#F78C9C] rounded-3xl rounded-r-none"
+              class="w-[47%] lg:w-[342px] h-[220px] bg-[#F78C9C] rounded-3xl rounded-r-none "
             >
               <div class="pt-[50px]">
                 <p class="text-center text-[40px] font-rale font-bold">
@@ -338,7 +343,7 @@
                 class="bg-[#F78C9C]"
               />
             </div>
-            <div class="w-[201px] h-[220px] bg-[#F78C9C] rounded-r-3xl">
+            <div class="   lg:w-[201px] h-[220px] bg-[#F78C9C] rounded-r-3xl">
               <div>
                 <p
                   class="text-center text-[32px] font-semibold font-rale pt-[50px]"
@@ -354,7 +359,7 @@
 
         <div class="text-center">
           <button
-            class="text-[#1DD100] rounded-md border-2 border-[#1DD100] p-4 mt-14 w-[15%] mb-14 text-xl font-semibold"
+            class="text-[#1DD100] rounded-md border-2 border-[#1DD100] p-4 mt-14 lg:w-[15%] mb-14 text-xl font-semibold"
           >
             See All Offers
           </button>
@@ -363,7 +368,7 @@
     </main>
     <section class="w-full bg-[#F7F8F8]">
       <div
-        class="min-h-[300px] border-t-2 rounded-[88px] border-[#1DD100] rounded-b-none w-full"
+        class="min-h-[300px] border-t-2 rounded-[88px] border-[#1DD100] rounded-b-none lg:w-full"
       >
         <h3
           class="text-center text-[40px] font-bold font-rale pt-[50px] pb-[25px]"
@@ -380,76 +385,76 @@
       <div class="flex justify-center items-center">
         <div class="flex justify-center">
           <div
-            class="w-[870px] h-[420px] bg-white rounded-[24px] rounded-r-none"
+            class=" w-[450px] lg:w-[870px] h-[420px] bg-white rounded-[24px] rounded-r-none"
           >
             <div class="flex justify-between mt-[32px]">
-              <div class="flex items-center gap-1 ml-[70px]">
+              <div class="flex items-center gap-[12px] lg:gap-1 ml-[70px]">
                 <div>
-                  <img src="./images/bus-logo.png" alt="" />
+                  <img src="./images/bus-logo.png" alt="" class=" w-[30px] lg:w-[32px] ml-10 lg:ml-0" />
                 </div>
                 <div>
-                  <h3 class="text-[32px] font-semibold mb-2">
+                  <h3 class=" text-sm lg:text-[32px] font-semibold mb-2">
                     Greenline Paribahan
                   </h3>
-                  <h3 class="text-lg font-inter1 font-normal">
+                  <h3 class=" text-sm lg:text-lg font-inter1 font-normal">
                     Coach-009-WEB ! AC_Business
                   </h3>
                 </div>
               </div>
 
               <div
-                class="flex w-[180px] h-[56px] bg-[#1DD10026] p-2 rounded-md mt-4"
+                class="flex  w-[140px] lg:w-[160px] h-[56px] bg-[#1DD10026] p-2 rounded-md mt-4"
               >
                 <div>
                   <img src="./images/seat-green.png" alt="" />
                 </div>
                 <div class="ml-1">
-                  <p class="text-[#1DD100] text-lg font-medium">
+                  <p class="text-[#1DD100] lg:text-lg font-medium">
                    
-                    <span id="seats-left" class="mr-1"> 40 </span> Seats left
+                    <span id="seats-left" class="mr-1 text-[12px] lg:text-lg"> 40 </span><span class="  text-[12px] lg:text-lg">Seats left</span> 
                   </p>
                 </div>
               </div>
             </div>
            
             <div
-              class="w-[800px] h-[258px] bg-[#F7F8F8] rounded-3xl p-4 ml-[70px]"
+              class="w-[400px] lg:w-[800px] h-[258px] bg-[#F7F8F8] rounded-3xl p-4 ml-[70px]"
             >
               <div
                 class="flex justify-between border border-dashed border-b-[#03071233] py-3"
               >
                 <div>
-                  <p class="font-rale font-[600] text-[#03071299]">Route</p>
+                  <p class="font-rale font-[600] text-[#03071299] text-[14px] lg:text-[18px] ml-6 lg:ml-0">Route</p>
                 </div>
                 <div>
-                  <p>Dhaka - Sylhet</p>
+                  <p class="text-sm lg:text-lg mr-3 lg:mr-0">Dhaka - Sylhet</p>
                 </div>
               </div>
               <div
                 class="flex justify-between border border-dashed border-b-[#03071233] py-3.5"
               >
                 <div>
-                  <p class="font-rale font-[600] text-[#03071299]">
+                  <p class="font-rale font-[600] text-[#03071299] ml-[14px] lg:ml-0  text-sm  lg:text-lg">
                     Departure Time
                   </p>
                 </div>
                 <div>
-                  <p>9:00 PM</p>
+                  <p class="text-sm lg:text-lg mr-3 lg:mr-0">9:00 PM</p>
                 </div>
               </div>
-              <div class="flex gap-[80px] py-10">
+              <div class="flex gap-3 lg:gap-[40px] py-10    ml-[45px] lg:ml-0">
                 <div>
-                  <button class="bg-[#0307120d] font-inter2 p-3 rounded-md">
+                  <button class="bg-[#0307120d] font-inter2  p-0 lg:p-3 rounded-md text-[8px]  lg:text-[16px] lg:w-[235px]">
                     Boarding Point - Laxmipur
                   </button>
                 </div>
                 <div>
-                  <button class="bg-[#0307120d] font-inter2 p-3 rounded-md">
+                  <button class="bg-[#0307120d] font-inter2  p-0 lg:p-3 rounded-md text-[8px]  lg:text-[16px] lg:w-[235px]">
                     Dropping Point - Bogura
                   </button>
                 </div>
                 <div>
-                  <button class="bg-[#0307120d] font-inter2 p-3 rounded-md">
+                  <button class="bg-[#0307120d] font-inter2  p-0 lg:p-3 rounded-md text-[8px]  lg:text-[16px] lg:w-[235px]">
                     Est. Time - 11 Hour
                   </button>
                 </div>
@@ -464,20 +469,20 @@
             />
           </div>
           <div
-            class="w-[315px] h-[420px] bg-white rounded-[24px] rounded-l-none flex justify-center items-center"
+            class=" w-[220px] lg:w-[315px] h-[420px] bg-white rounded-[24px] rounded-l-none flex justify-center items-center"
           >
             <div class="flex flex-col items-center justify-center">
               <div class="flex flex-col justify-center items-center">
                 <div>
-                  <img src="./images/fare.png" alt="" />
+                  <img src="./images/fare.png" alt="" class="  mr-[100px] lg:mr-0" />
                 </div>
                 <div>
                   <p
-                    class="text-[32px] font-bold font-rale mr-5 text-center text-[#030712]"
+                    class="text-[14px] lg:text-[32px] font-bold font-rale  text-center text-[#030712]     mr-[95px] lg:mr-5"
                   >
                     550 Taka
                   </p>
-                  <p class="text-center text-2xl text-[#03071299] font-medium">
+                  <p class="text-center text-[14px] lg:text-2xl text-[#03071299] font-medium mr-[95px] lg:mr-0">
                     Per Seat
                   </p>
                 </div>
@@ -679,7 +684,7 @@
               </div>
               
            
-              <button type="submit" class="w-full btn btn-primary rounded-md bg-[#1dd100] enabled disabled" id = "nextButton" disabled>Next</button>
+              <button type="submit" class="w-full btn btn-primary rounded-md bg-[#1dd100] enabled  text-transparent mr-3" id = "nextButton" onclick="redirect()" >.<span><a href="./index-model.html" class="text-black">Next</a></span></button>
 
             </form>
           </div>
@@ -726,9 +731,12 @@
 let totalValue = 0;
 let seatNo = 0;
 let clickedButtons = [];
+
 const phoneNumberInput = document.getElementById('phone-number');
 
 const nextButton = document.getElementById('nextButton');
+
+nextButton.disabled=true;
 const discountContainer = document.getElementById("discount-container");
 
 function showDiscountPrice(discount) {
@@ -753,61 +761,58 @@ seatButtons.forEach(button => {
 function checkFormValidity() {
     const selectedSeats = clickedButtons.length;
     const phoneNumber = phoneNumberInput.value.trim();
-   
 
     if (selectedSeats > 0 && phoneNumber !== '') {
         nextButton.disabled = false;
         nextButton.classList.remove('disabled');
-        
-               
-           
-        
     } else {
         nextButton.disabled = true;
         nextButton.classList.add('disabled');
     }
 }
 
-
-
 const formBtn = document.getElementById("nextButton");
 formBtn.classList.add("fomnBtn");
 
 function showSeatInfo(seatName) {
     const clickedButton = event.target;
-    if (!clickedButtons.includes(clickedButton)) {
+    if (!clickedButtons.includes(clickedButton) && clickedButtons.length < 4) {
         clickedButtons.push(clickedButton);
         clickedButton.disabled = true;
         clickedButton.style.backgroundColor = '#1dd100';
         clickedButton.style.color = 'white';
+        
         const seatInfoContainer = document.getElementById('selectedSeatInfo');
-        const grandTotal = document.getElementById('grand-total');
-        grandTotal.innerText = 0;
         const li = document.createElement('li');
-        li.innerHTML = `<div class="flex justify-between text-base font-[400] text-[#03071299] opacity-[60]"><p class="mr-[10px]">${seatName}</p> <p class="">Economic Class </p>  550 Taka </div>`;
+        li.innerHTML = `<div class="flex justify-between text-base font-[400] text-[#03071299] opacity-[60]">
+                            <p class="mr-[10px]">${seatName}</p>
+                            <p class="">Economic Class</p> 
+                            <p>550 Taka</p>
+                        </div>`;
         li.classList.add('li-style');
         seatInfoContainer.appendChild(li);
 
         totalValue += 550;
-
         document.getElementById('total-value').innerText = totalValue;
 
-        updateGrandTotal();
-        seatNo++;
-        document.getElementById('seat-no').innerText = seatNo;
-        allBtns = document.querySelectorAll('.btn-secondary');
-        const seatsLeft = document.getElementById("seats-left");
-        seatsLeft.innerText = 40 - parseInt(seatNo);
-        if (seatNo >= 4) {
-            allBtns.forEach(btn => {
-                btn.removeAttribute('onclick');
-            });
-        }
+        
+        seatNo++; 
+        document.getElementById('seat-no').innerText = seatNo; 
 
+     
+        const remainingSeats = 40 - seatNo; 
+        document.getElementById('seats-left').innerText = remainingSeats; 
+        updateGrandTotal();
+
+        if (clickedButtons.length === 4) {
+            removeOnClickFromRemainingButtons();
+        }
 
         enableApplyButton();
     }
 }
+
+
 
 function enableApplyButton() {
     const couponInput = document.getElementById('coupon-input').value;
@@ -824,19 +829,15 @@ function getTotalGrand() {
     const couponInput = document.getElementById('coupon-input').value;
     let discount = 0;
 
-
     if (clickedButtons.length === 4) {
         if (couponInput === 'NEW15') {
             discount = totalValue * 0.15;
-
             hiddenApplyContainer();
             showDiscountPrice(discount);
         } else if (couponInput === 'Couple20') {
             discount = totalValue * 0.20;
-
             hiddenApplyContainer();
             showDiscountPrice(discount);
-
         }
     }
 
@@ -859,25 +860,16 @@ function redirect() {
 
 function showHelloWorldInModel() {
     const modal = window.opener.document.getElementById('my_modal_3');
+    
     modal.showModal();
 
     const modalContent = modal.querySelector('.modal-box');
     modalContent.innerHTML = '<h3 class="font-bold text-lg">Hello World!</h3><p class="py-4">Press ESC key or click on ✕ button to close</p>';
 }
-nextButton.addEventListener("click",()=>{
-  handleNextButtonClick()
-})
-function handleNextButtonClick() {
-  
-  setTimeout(() => {
-        handleNextButtonClick();
-    }, 22000);
-    showHelloWorldInModel();
-    
-}
+
+
 
 const scrollBtn = document.getElementById('scrollBtn');
-
 scrollBtn.addEventListener('click', function () {
     window.scrollBy({ top: 1250, behavior: 'smooth' });
 });
@@ -887,7 +879,36 @@ function hiddenApplyContainer() {
     applyContainer.classList.add("apply-container");
 }
 
- 
+
+function checkAllInputsFilled() {
+    const formInputs = document.querySelectorAll('.card-body input[required]');
+    let allInputsFilled = true;
+    formInputs.forEach(input => {
+        if (input.value.trim() === '') {
+            allInputsFilled = false;
+        }
+    });
+    return allInputsFilled;
+}
+
+
+function updateNextButtonOnClick() {
+    const nextButton = document.getElementById('nextButton');
+    if (checkAllInputsFilled()) {
+        nextButton.removeAttribute('disabled');
+        nextButton.setAttribute('onclick', 'redirect()');
+    } else {
+        nextButton.setAttribute('disabled', true);
+        nextButton.removeAttribute('onclick');
+    }
+}
+
+
+const formInputs = document.querySelectorAll('.card-body input[required]');
+formInputs.forEach(input => {
+    input.addEventListener('input', updateNextButtonOnClick);
+});
+
 
 </script>
 
